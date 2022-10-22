@@ -2,12 +2,14 @@ package OOP;
 
 public class Main {
     public static void main(String[] args) {
-        Car toyota = new Car();
-        Car holden = new Car();
-        Car porsche = new Car();
-        toyota.setModel("Camry");
-        porsche.setModel("Porsche");
-        System.out.println("Toyota Model is " + toyota.getModel());
-        System.out.println("Porsche Model is " + porsche.getModel());
+        Account bobsAccount = new Account();
+        System.out.println(bobsAccount.getCustomerName());
+       System.out.println(bobsAccount.getAccountNumber());
+       System.out.println(bobsAccount.getBalance());
+       bobsAccount.withdraw(100.0);
+       bobsAccount.deposit(50.0);
+       bobsAccount.withdraw(100.0);
+       bobsAccount.deposit(51.0);
+       bobsAccount.withdraw(100.0);
     }
 }
