@@ -20,6 +20,7 @@ public class Account {
         this.phoneNumber = phoneNumber;
         this.balance = balance;
     }
+    
 
     public void getAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
