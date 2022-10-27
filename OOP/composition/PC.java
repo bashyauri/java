@@ -1,0 +1,29 @@
+package OOP.composition;
+
+public class PC {
+    private Case theCase;
+    private Monitor monitor;
+    private Motherboard motherboard;
+
+    public PC(Case theCase, Monitor monitor, Motherboard motherboard) {
+        this.theCase = theCase;
+        this.monitor = monitor;
+        this.motherboard = motherboard;
+    }
+
+    private Case getTheCase() {
+        return theCase;
+    }
+
+  
+
+    private void drawLogo() {
+        monitor.drawPixelAt(1200,50, "Orange");
+    }
+
+    public void powerUp() {
+        theCase.pressPowerButton();
+        drawLogo();   
+    }
+    
+}
