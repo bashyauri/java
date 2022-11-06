@@ -107,7 +107,7 @@ class Honda extends Car {
     }
 
     public static void main(String[] args) {
-        Car car = new Car(4, "Other car");
+       
         Mercedes mercedes = new Mercedes(32,"Mercedes");
         Toyota toyota = new Toyota(16, "Corrolla");
         Honda honda = new Honda(8, "Joker");
