@@ -1,5 +1,6 @@
 package List;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -34,6 +35,8 @@ public class Main {
                     searchItem();
                     break;
                 case 6:
+                    processArrayList();
+                case 7:
                     quit = true;
                     break;
                 default:
@@ -83,6 +86,14 @@ public class Main {
         } else {
             System.out.println(searchItem + " item is not on the list");
         }
+    }
+
+    public static void processArrayList() {
+        ArrayList<String> newArray = new ArrayList<String>();
+        newArray.addAll(groceryList.getGroceryList());
+        ArrayList<String> nextArray = new ArrayList<String>(groceryList.getGroceryList());
+        String[] myArray = new String[groceryList.getGroceryList().size()];
+        myArray = groceryList.getGroceryList().toArray(myArray);
     }
     
 }
